@@ -8,8 +8,8 @@
 * { margin: 0; padding: 0 }
 body {
   background: #A4C639;
-  font-size: 8pt;
-  font-family: Verdana;
+  font-size: 9pt;
+  font-family: Verdana,sans-serif;
 }
 div#doc {
   margin: 2em;
@@ -17,6 +17,7 @@ div#doc {
   background: #fff;
 }
 h1,h2 {
+  font-family: Roboto, sans-serif;
   margin: 0.5em 0em;
   color: #A4C639;
 }
@@ -24,15 +25,23 @@ h1,h2 {
 table {
   margin: 1em 0;
   border-collapse: collapse;
-}
-td {
-  border:solid 1px #ccc;
-  padding: 0.25em 1em;
+  border: solid 2px #999;
 }
 th {
-  border:solid 1px #ccc;
+  border: solid 1px #ccc;
   padding: 0.5em;
   line-height: 1.2;
+  background-color: #eee;
+}
+td {
+  border: solid 1px #ccc;
+  padding: 0.25em 1em;
+}
+tr.y0 td:nth-child(5) {
+  text-align: right;
+}
+tr.y1 td:nth-child(4) {
+  text-align: right;
 }
 ul {
   padding-left: 1em;
@@ -66,7 +75,7 @@ a:hover {
 <th>iOS</th>
 </tr>
 
-<tr>
+<tr class="y0">
 <td>2018</td>
 <td>Aug?</td>
 <td>P</td>
@@ -79,11 +88,11 @@ a:hover {
 <td></td>
 </tr>
   
-<tr>
+<tr class="y0">
 <td rowspan="2">2017</td>
 <td><a href="https://android-developers.googleblog.com/2017/12/welcoming-android-81-oreo-and-android.html">Dec 5</a></td>
 <td>8.1</td>
-<td rowspan="2">Oreo</td>
+<td>Oreo MR1</td>
 <td>27</td>
 <td></td>
 <td></td>
@@ -92,9 +101,10 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td><a href="https://android-developers.googleblog.com/2017/08/introducing-android-8-oreo.html">Aug 21</a></td>
 <td>8.0</td>
+<td>Oreo</td>
 <td>26</td>
 <td></td>
 <td></td>
@@ -103,11 +113,11 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y0">
 <td rowspan="2">2016</td>
 <td><a href="https://android-developers.googleblog.com/2016/12/welcoming-android-711-nougat.html">Dec 5</a></td>
 <td>7.1.1<br>7.1</td>
-<td rowspan="2">Nougat</td>
+<td>Nougat MR1</td>
 <td>25</td>
 <td>
   <ul>
@@ -120,9 +130,10 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td><a href="https://android-developers.googleblog.com/2016/08/taking-final-wrapper-off-of-nougat.html">Aug 22</a></td>
 <td>7.0</td>
+<td>Nougat</td>
 <td>24</td>
 <td></td>
 <td></td>
@@ -131,7 +142,7 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y0">
 <td rowspan="2">2015</td>
 <td><a href="https://android-developers.googleblog.com/2015/09/android-marshmallow-ready-for-devices.html">Sep 29</a></td>
 <td>6.0</td>
@@ -150,7 +161,7 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td><a href="https://android-developers.googleblog.com/2015/03/android-51-lollipop-sdk.html">Mar 10</a></td>
 <td>5.1</td>
 <td>Lollipop MR1</td>
@@ -162,7 +173,7 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y0">
 <td rowspan="2">2014</td>
 <td><a href="https://android-developers.googleblog.com/2014/10/android-50-lollipop-sdk-and-nexus.html">Oct 17</a></td>
 <td>5.0</td>
@@ -181,7 +192,7 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Jun</td>
 <td>4.4W</td>
 <td>KitKat Watch</td>
@@ -193,7 +204,7 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y0">
 <td rowspan="2">2013</td>
 <td>Oct</td>
 <td>4.4</td>
@@ -206,7 +217,7 @@ a:hover {
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>July</td>
 <td>4.3</td>
 <td>Jelly Bean MR2</td>
@@ -219,7 +230,7 @@ a:hover {
 </tr>
 
 
-<tr>
+<tr class="y0">
 <td rowspan="2">2012</td>
 <td>Nov</td>
 <td>4.2</td>
@@ -234,7 +245,7 @@ Oct: iPad mini
 </td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Jun</td>
 <td>4.1</td>
 <td>Jelly Bean</td>
@@ -246,7 +257,7 @@ Oct: iPad mini
 </tr>
 
 
-<tr>
+<tr class="y0">
 <td rowspan="6">2011</td>
 <td>Dec</td>
 <td>4.0.3</td>
@@ -259,7 +270,7 @@ Oct: iPad mini
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Oct</td>
 <td>4.0</td>
 <td>Ice Cream Sandwich</td>
@@ -271,7 +282,7 @@ Oct: iPad mini
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Jun</td>
 <td>3.2</td>
 <td>Honeycomb MR2</td>
@@ -283,7 +294,7 @@ Oct: iPad mini
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>May</td>
 <td>3.1</td>
 <td>Honeycomb MR1</td>
@@ -295,7 +306,7 @@ Oct: iPad mini
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Feb</td>
 <td>3.0</td>
 <td>Honeycomb</td>
@@ -307,7 +318,7 @@ Oct: iPad mini
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Feb</td>
 <td>2.3.3</td>
 <td>Gingerbread MR1</td>
@@ -320,7 +331,7 @@ Oct: iPad mini
 </tr>
 
 
-<tr>
+<tr class="y0">
 <td rowspan="3">2010</td>
 <td>Nov</td>
 <td>2.3</td>
@@ -335,7 +346,7 @@ Apr: iPad
 </td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Jun</td>
 <td>2.2</td>
 <td>Froyo</td>
@@ -346,7 +357,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Jan</td>
 <td>2.1</td>
 <td>Eclair MR1</td>
@@ -357,7 +368,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y0">
 <td rowspan="5">2009</td>
 <td>Dec</td>
 <td>2.0.1</td>
@@ -370,7 +381,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Nov</td>
 <td>2.0</td>
 <td>Eclair</td>
@@ -382,7 +393,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Sep</td>
 <td>1.6</td>
 <td>Donut</td>
@@ -394,7 +405,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>May</td>
 <td>1.5</td>
 <td>Cupcake</td>
@@ -406,7 +417,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y1">
 <td>Feb</td>
 <td>1.1</td>
 <td>Base</td>
@@ -418,7 +429,7 @@ Apr: iPad
 <td></td>
 </tr>
 
-<tr>
+<tr class="y0">
 <td>2008</td>
 <td>Oct</td>
 <td>1.0</td>
